@@ -1,0 +1,24 @@
+#!/usr/bin/make -f
+#export DH_VERBOSE = 1
+
+export PYBUILD_NAME=pympler
+export PYBUILD_TEST_CUSTOM=1
+export PYBUILD_TEST_ARGS={interpreter} {dir}/test/runtest.py $(if $(PYBUILD_AUTOPKGTEST),-post-install,-pre-install) -verbose 3
+
+%:
+	dh $@ --with python3 --buildsystem=pybuild
+
+execute_before_dh_auto_build:
+	uglifyjs -o pympler/templates/jquery.flot.tooltip.min.js debian/javascript/jquery.flot.tooltip.js
+	mkdir pympler/static
+	uglifyjs -o pympler/static/jquery.sparkline.min.js debian/javascript/jquery.sparkline.js
+
+execute_after_dh_auto_clean:
+	rm -rf pympler/static
+	rm -f pympler/templates/jquery.flot.tooltip.min.js
+
+execute_after_dh_auto_install:
+	set -e; for python in $(shell py3versions -r); do \
+		ln -s /usr/share/javascript/jquery-flot/jquery.flot.min.js debian/python3-pympler/usr/lib/$$python/dist-packages/pympler/templates/jquery.flot.min.js; \
+		ln -s /usr/share/javascript/jquery-flot/jquery.flot.stack.min.js debian/python3-pympler/usr/lib/$$python/dist-packages/pympler/templates/jquery.flot.stack.min.js; \
+	done

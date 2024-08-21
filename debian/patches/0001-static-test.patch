@@ -1,0 +1,22 @@
+From: William Grzybowski <william@grzy.org>
+Date: Fri, 20 Sep 2019 15:30:29 -0300
+Subject: static test
+
+Forwarded: not-needed
+---
+ test/gui/test_web.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/test/gui/test_web.py b/test/gui/test_web.py
+index 114980c..6a47d14 100644
+--- a/test/gui/test_web.py
++++ b/test/gui/test_web.py
+@@ -125,7 +125,7 @@ class WebGuiTest(unittest.TestCase):
+ 
+     def test_static_files(self):
+         """Test if static files are served."""
+-        for filename in ['style.css', 'jquery.flot.min.js']:
++        for filename in ['style.css']:
+             self.get('/static/%s' % filename, status=200)
+ 
+     def test_traceback(self):

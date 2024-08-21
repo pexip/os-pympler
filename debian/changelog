@@ -1,0 +1,60 @@
+pympler (1.1+dfsg1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release:
+    - Update bundled bottle.py for compatibility with Python >= 3.10
+      (closes: #1002173).
+  * Use pybuild-plugin-pyproject and remove reliance on setup.py for tests.
+  * Switch to autopkgtest-pkg-pybuild.
+
+ -- Colin Watson <cjwatson@debian.org>  Thu, 22 Aug 2024 00:07:50 +0100
+
+pympler (0.9+dfsg1-2) unstable; urgency=medium
+
+  * Team upload
+  * d/control: Change build-dependency to uglifyjs Closes: #979949
+
+ -- Håvard Flaget Aasen <haavard_aasen@yahoo.no>  Fri, 29 Jan 2021 23:14:30 +0100
+
+pympler (0.9+dfsg1-1) unstable; urgency=medium
+
+  * Team upload
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Håvard Flaget Aasen ]
+  * d/watch: Add repacksuffix and use substitution patterns
+  * New upstream version 0.9+dfsg1
+    New versions supports both Python 3.8 and 3.9 Closes: #946265
+  * d/control:
+    - Update Standards-Version to 4.5.1
+    - Add Rules-Requires-Root: no
+  * Bump debhelper to 13
+  * d/patches: Add Forwarded: not-needed
+  * d/copyright: Update copyright years
+
+ -- Håvard Flaget Aasen <haavard_aasen@yahoo.no>  Sun, 27 Dec 2020 21:31:36 +0100
+
+pympler (0.7+dfsg1-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Bump Standards-Version to 4.4.1.
+
+  [ William Grzybowski ]
+  * Upload to unstable
+
+ -- William Grzybowski <william@grzy.org>  Wed, 13 Nov 2019 12:30:39 -0300
+
+pympler (0.7+dfsg1-1~exp1) experimental; urgency=medium
+
+  * Initial release (Closes: #940725)
+
+ -- William Grzybowski <william@grzy.org>  Thu, 19 Sep 2019 09:59:01 -0300

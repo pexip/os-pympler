@@ -1,6 +1,7 @@
 pympler (1.1+dfsg1-1+pexip24u1) pexip; urgency=medium
 
   * Prepare Pexip packaging
+  * Vendor flot
 
  -- Huw Jones <huw@pexip.com>  Wed, 09 Oct 2024 14:22:42 +0000
 

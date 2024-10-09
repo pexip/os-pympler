@@ -24,6 +24,18 @@ Files: debian/*
 Copyright: 2019 William Grzybowski <william@grzy.org>
 License: Apache-2.0
 
+Files:
+   debian/javascript/jquery.canvaswrapper.js
+   debian/javascript/jquery.colorhelpers.js
+   debian/javascript/jquery.flot.js
+   debian/javascript/jquery.flot.browser.js
+   debian/javascript/jquery.flot.drawSeries.js
+   debian/javascript/jquery.flot.saturated.js
+   debian/javascript/jquery.flot.stack.js
+   debian/javascript/jquery.flot.uiConstants.js
+Copyright: 2007-2014 IOLA and Ole Laursen.
+License: MIT
+
 Files: debian/javascript/jquery.flot.tooltip.js
 Copyright: 2012 Krzysztof Urbas
            2012 Evan Steinkerchner

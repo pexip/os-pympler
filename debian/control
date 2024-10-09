@@ -6,7 +6,6 @@ XSBC-Pexip-Original-Maintainer: Debian Python Team <team+python@tracker.debian.o
 XSBC-Pexip-Original-Uploaders: William Grzybowski <william@grzy.org>
 Build-Depends: debhelper-compat (= 13),
                dh-python,
-               libjs-jquery-flot,
                uglifyjs,
                pybuild-plugin-pyproject,
                python3-all,
@@ -21,7 +20,7 @@ XS-Pexip-Upstream: http://deb.debian.org/debian/ trixie
 
 Package: python3-pympler
 Architecture: all
-Depends: libjs-jquery-flot, ${misc:Depends}, ${python3:Depends}
+Depends: ${misc:Depends}, ${python3:Depends}
 Description: Tool to measure, monitor and analyze the Python objects memory
  Pympler is a development tool to measure, monitor and analyze the memory
  behavior of Python objects in a running Python application.

@@ -1,8 +1,9 @@
 Source: pympler
 Section: python
 Priority: optional
-Maintainer: Debian Python Team <team+python@tracker.debian.org>
-Uploaders: William Grzybowski <william@grzy.org>
+Maintainer: Pexip AS <packaging@pexip.com>
+XSBC-Pexip-Original-Maintainer: Debian Python Team <team+python@tracker.debian.org>
+XSBC-Pexip-Original-Uploaders: William Grzybowski <william@grzy.org>
 Build-Depends: debhelper-compat (= 13),
                dh-python,
                libjs-jquery-flot,
@@ -16,6 +17,7 @@ Homepage: https://github.com/pympler
 Vcs-Browser: https://salsa.debian.org/python-team/packages/pympler
 Vcs-Git: https://salsa.debian.org/python-team/packages/pympler.git
 Testsuite: autopkgtest-pkg-pybuild
+XS-Pexip-Upstream: http://deb.debian.org/debian/ trixie
 
 Package: python3-pympler
 Architecture: all

@@ -16,7 +16,7 @@ Homepage: https://github.com/pympler
 Vcs-Browser: https://salsa.debian.org/python-team/packages/pympler
 Vcs-Git: https://salsa.debian.org/python-team/packages/pympler.git
 Testsuite: autopkgtest-pkg-pybuild
-XS-Pexip-Upstream: http://deb.debian.org/debian/ trixie
+XS-Pexip-Upstream: http://deb.debian.org/debian/ sid
 
 Package: python3-pympler
 Architecture: all
